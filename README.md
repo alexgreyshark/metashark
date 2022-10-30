@@ -8,9 +8,7 @@
 
     $ cd somedir
 
-    $ git clone https://github.com/alexgreyshark/test-channel-service.git
-
-    $ cd test-channel-service/test_channel_project
+    $ git clone https://github.com/alexgreyshark/metashark.git
 
     $ docker-compose up --build
 
