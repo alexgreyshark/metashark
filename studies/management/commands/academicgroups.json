@@ -1,0 +1,34 @@
+[
+  {
+    "short_name": "ТФ-10-16",
+    "study_direction_id": "1"
+  },
+  {
+    "short_name": "ТФ-10-17",
+    "study_direction_id": "1"
+  },
+  {
+    "short_name": "ТФ-10-18",
+    "study_direction_id": "1"
+  },
+  {
+    "short_name": "А-10-17",
+    "study_direction_id": "2"
+  },
+  {
+    "short_name": "А-10-18",
+    "study_direction_id": "2"
+  },
+  {
+    "short_name": "Э-10-18",
+    "study_direction_id": "3"
+  },
+  {
+    "short_name": "Э-10-19",
+    "study_direction_id": "3"
+  },
+  {
+    "short_name": "ИФ-10-19",
+    "study_direction_id": "4"
+  }
+]

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Физика",
+    "study_direction": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "Химия",
+    "study_direction": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "name": "Информатика",
+    "study_direction": [
+      2
+    ]
+  },
+  {
+    "name": "БЖД",
+    "study_direction": [
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+
+]

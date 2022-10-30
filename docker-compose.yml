@@ -1,0 +1,46 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    environment:
+      - TZ=Europe/Moscow
+    command: python manage.py runserver 0.0.0.0:8003
+    volumes:
+      - ./:/usr/src/app/
+    ports:
+      - 8003:8003
+    expose: [8003]
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db
+  db:
+    image: postgres:13.0-alpine
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=django_shark
+      - POSTGRES_PASSWORD=shark
+      - POSTGRES_DB=django_shark_db
+  redis:
+    image: redis:alpine
+    hostname: redis
+    volumes:
+      - redisdata:/data
+    ports:
+      - 6379:6379
+    expose: [ 6379 ]
+  celery:
+    restart: always
+    build:
+      context: .
+    command: celery -A metashark worker -l info
+    volumes:
+      - ./:/usr/src/app/
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - db
+volumes:
+  postgres_data:
+  redisdata:

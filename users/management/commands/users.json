@@ -1,0 +1,17 @@
+[
+  {
+    "username": "curator1",
+    "role": "2",
+    "password": "11223344Aa"
+  },
+  {
+    "username": "curator2",
+    "role": "2",
+    "password": "11223344Aa"
+  },
+  {
+    "username": "administrator",
+    "role": "1",
+    "password": "11223344Aa"
+  }
+]
