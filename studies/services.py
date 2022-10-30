@@ -27,7 +27,7 @@ class MakeReportTable:
                     item.code,
                     item.curator.username if item.curator else 'Нет куратора',
                     ', '.join(
-                        item.subject.values_list(
+                        item.subjects.values_list(
                             'name',
                             flat=True,
                         )
